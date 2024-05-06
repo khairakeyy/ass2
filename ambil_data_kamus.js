@@ -21,3 +21,16 @@ $(document).ready(function(){
         }
     });
 });
+
+// Fungsi untuk menghapus data dengan menggunakan AJAX
+function hapusData(id_kata){
+    $.ajax({
+        url: "hapus_data.php?id=" + id_kata,
+        type: "GET",
+        success: function(){
+            // Refresh halaman atau hapus baris tabel
+            // Untuk kesederhanaan, Anda bisa memuat ulang halaman
+            location.reload();
+        }
+    });
+}
