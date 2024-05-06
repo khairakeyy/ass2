@@ -14,10 +14,10 @@ function tampilkanData(data){
 
     for(var i = 0; i < data.length; i++){
         var id = data[i].id;
-        var kata = data[i].kata;
-        var arti = data[i].arti;
+        var kata_isyarat = data[i].kata_isyarat;
+        var terjemahan = data[i].terjemahan;
 
-        tabelHTML += "<tr><td>" + id + "</td><td>" + kata + "</td><td>" + arti + "</td><td><button onclick='hapusData(" + id + ")'>Hapus</button></td></tr>";
+        tabelHTML += "<tr><td>" + id + "</td><td>" + kata_isyarat + "</td><td>" + terjemahan + "</td><td><button onclick='hapusData(" + id + ")'>Hapus</button></td></tr>";
     }
 
     tabelHTML += "</table>";
